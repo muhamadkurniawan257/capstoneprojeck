@@ -3,13 +3,13 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 import io
 import tensorflow as tf
-from tensorflow import Untitled1
+from tensorflow import keras
 import numpy as np
 from PIL import Image
 
 from flask import Flask, request, jsonify
 
-model = Untitled1.models.load_model("Untitled1")
+model = keras.models.load_model("nn.h5")
 
 
 def transform_image(pillow_image):
